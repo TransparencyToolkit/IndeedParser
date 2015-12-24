@@ -1,0 +1,8 @@
+Parser for indeed.com resumes.
+
+To install-
+gem install indeedparser
+
+To run-
+i = IndeedPasrer.new(profile html, url, {fields_to_add: value})
+i.get_results_by_job
