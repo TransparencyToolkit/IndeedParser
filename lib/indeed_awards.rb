@@ -1,7 +1,7 @@
 require 'nokogiri'
 load 'utilities.rb'
 
-class Awards
+class IndeedAwards
   include Utilities
   def initialize(html)
     awards = html.xpath("//div[contains(concat(' ',normalize-space(@class),' '),' award-section ')]")

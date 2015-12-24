@@ -1,7 +1,7 @@
 require 'nokogiri'
 load 'utilities.rb'
 
-class RecPeople
+class IndeedRecPeople
   include Utilities
   def initialize(html)
     rec_people = html.css(".rec_resume")

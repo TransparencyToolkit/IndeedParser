@@ -1,7 +1,7 @@
 require 'nokogiri'
 load 'utilities.rb'
 
-class Links
+class IndeedLinks
   include Utilities
   def initialize(html)
     links = html.xpath("//div[contains(concat(' ',normalize-space(@class),' '),' link-section ')]")

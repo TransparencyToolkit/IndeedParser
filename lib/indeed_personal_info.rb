@@ -1,13 +1,13 @@
 require 'nokogiri'
-load 'degrees.rb'
-load 'military_service.rb'
-load 'certifications.rb'
-load 'rec_people.rb'
-load 'links.rb'
-load 'awards.rb'
-load 'groups.rb'
+load 'indeed_degrees.rb'
+load 'indeed_military_service.rb'
+load 'indeed_certifications.rb'
+load 'indeed_rec_people.rb'
+load 'indeed_links.rb'
+load 'indeed_awards.rb'
+load 'indeed_groups.rb'
 
-class PersonalInfo
+class IndeedPersonalInfo
   def initialize(html, url)
     @raw_html = html
     @html = Nokogiri::HTML(html)
@@ -40,43 +40,43 @@ class PersonalInfo
 
   # Get certification data
   def certifications
-    c = Certifications.new(@html)
+    c = IndeedCertifications.new(@html)
     c.get_certifications
   end
 
   # Get list of suggested resumes from side
   def rec_people
-    r = RecPeople.new(@html)
+    r = IndeedRecPeople.new(@html)
     r.get_rec_people
   end
 
   # Get any links they list
   def links
-    l = Links.new(@html)
+    l = IndeedLinks.new(@html)
     l.get_links
   end
 
   # Get list of awards
   def awards
-    a = Awards.new(@html)
+    a = IndeedAwards.new(@html)
     a.get_awards
   end
 
   # Get list of groups
   def groups
-    g = Groups.new(@html)
+    g = IndeedGroups.new(@html)
     g.get_groups
   end
 
   # Get list of degrees
   def degrees
-    d = Degrees.new(@html)
+    d = IndeedDegrees.new(@html)
     d.get_degrees
   end
 
   # Get military service
   def military_service
-    m = MilitaryService.new(@html)
+    m = IndeedMilitaryService.new(@html)
     m.get_military_service
   end
 

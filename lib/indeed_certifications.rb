@@ -1,7 +1,7 @@
 require 'nokogiri'
 load 'utilities.rb'
 
-class Certifications
+class IndeedCertifications
   include Utilities
   def initialize(html)
     certifications = html.xpath("//div[contains(concat(' ',normalize-space(@class),' '),' certification-section ')]")

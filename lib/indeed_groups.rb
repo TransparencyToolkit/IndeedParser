@@ -1,7 +1,7 @@
 require 'nokogiri'
 load 'utilities.rb'
 
-class Groups
+class IndeedGroups
   include Utilities
   def initialize(html)
     groups = html.xpath("//div[contains(concat(' ',normalize-space(@class),' '),' group-section ')]")

@@ -1,7 +1,7 @@
 require 'nokogiri'
 load 'utilities.rb'
 
-class MilitaryService
+class IndeedMilitaryService
   include Utilities
   def initialize(html)
     military_items = html.xpath("//div[contains(concat(' ',normalize-space(@class),' '),' military-section ')]")

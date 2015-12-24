@@ -1,7 +1,7 @@
 require 'requestmanager'
 require 'json'
-load 'personal_info.rb'
-load 'jobs.rb'
+load 'indeed_personal_info.rb'
+load 'indeed_jobs.rb'
 
 class IndeedParser
   def initialize(html, url, crawler_fields)
@@ -13,10 +13,10 @@ class IndeedParser
 
   # Parse profile
   def parse
-    p = PersonalInfo.new(@html, @url)
+    p = IndeedPersonalInfo.new(@html, @url)
     @personal_info = p.get_personal_info
 
-    j = Jobs.new(@html)
+    j = IndeedJobs.new(@html)
     @job_info = j.get_jobs
   end
 

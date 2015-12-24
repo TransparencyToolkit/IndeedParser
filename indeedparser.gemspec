@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
   s.name        = 'indeedparser'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2015-12-23'
   s.summary     = 'Parses Indeed resumes'
   s.description = 'Parses Indeed resumes'
   s.authors     = ['M. C. McGrath']
   s.email       = 'shidash@transparencytoolkit.org'
-  s.files       = ["lib/indeedparser.rb", "lib/jobs.rb", "lib/personal_info.rb", "lib/awards.rb", "lib/certifications.rb", "lib/degrees.rb", "lib/groups.rb", "lib/rec_people.rb", "lib/military_service.rb", "lib/links.rb", "lib/utilities.rb"]
+  s.files       = ["lib/indeedparser.rb", "lib/indeed_jobs.rb", "lib/indeed_personal_info.rb", "lib/indeed_awards.rb", "lib/indeed_certifications.rb", "lib/indeed_degrees.rb", "lib/indeed_groups.rb", "lib/indeed_rec_people.rb", "lib/indeed_military_service.rb", "lib/indeed_links.rb", "lib/utilities.rb"]
   s.homepage    =
     'https://github.com/TransparencyToolkit/indeedparser'
   s.license       = 'GPL'

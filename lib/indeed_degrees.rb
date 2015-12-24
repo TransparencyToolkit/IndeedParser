@@ -1,7 +1,7 @@
 require 'nokogiri'
 load 'utilities.rb'
 
-class Degrees
+class IndeedDegrees
   include Utilities
   def initialize(html)
     degrees = html.xpath("//div[@itemtype='http://schema.org/EducationalOrganization']")
