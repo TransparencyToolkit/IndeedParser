@@ -3,7 +3,8 @@ require 'date'
 module IndeedUtilities
   # Parse dates
   def parse_dates(dates)
-    start_date, end_date = dates
+    start_date = dates
+    end_date = dates
     
     if dates.include?(" to ")
       start_date, end_date = dates.split(" to ")

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'indeedparser'
-  s.version     = '0.0.7'
+  s.version     = '0.0.8'
   s.date        = '2015-12-23'
   s.summary     = 'Parses Indeed resumes'
   s.description = 'Parses Indeed resumes'
