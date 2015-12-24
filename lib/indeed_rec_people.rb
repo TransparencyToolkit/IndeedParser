@@ -1,8 +1,8 @@
 require 'nokogiri'
-load 'utilities.rb'
+load 'indeed_utilities.rb'
 
 class IndeedRecPeople
-  include Utilities
+  include IndeedUtilities
   def initialize(html)
     rec_people = html.css(".rec_resume")
     @rec_people_list = Array.new

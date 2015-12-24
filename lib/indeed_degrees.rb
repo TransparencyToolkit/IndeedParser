@@ -1,8 +1,8 @@
 require 'nokogiri'
-load 'utilities.rb'
+load 'indeed_utilities.rb'
 
 class IndeedDegrees
-  include Utilities
+  include IndeedUtilities
   def initialize(html)
     degrees = html.xpath("//div[@itemtype='http://schema.org/EducationalOrganization']")
     @degree_list = Array.new

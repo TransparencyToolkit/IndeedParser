@@ -1,6 +1,6 @@
 require 'date'
 
-module Utilities
+module IndeedUtilities
   # Parse dates
   def parse_dates(dates)
     start_date, end_date = dates

@@ -1,8 +1,8 @@
 require 'nokogiri'
-load 'utilities.rb'
+load 'indeed_utilities.rb'
 
 class IndeedJobs
-  include Utilities
+  include IndeedUtilities
   def initialize(html)
     @html = Nokogiri::HTML(html)
 

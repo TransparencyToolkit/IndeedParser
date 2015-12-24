@@ -1,8 +1,8 @@
 require 'nokogiri'
-load 'utilities.rb'
+load 'indeed_utilities.rb'
 
 class IndeedLinks
-  include Utilities
+  include IndeedUtilities
   def initialize(html)
     links = html.xpath("//div[contains(concat(' ',normalize-space(@class),' '),' link-section ')]")
     @link_list = Array.new
